@@ -1,86 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    height: 100%;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
+    border: solid 2px rgba(0, 0, 0, 0.26);
 }
 
-.container {
-    position: relative;
-}
 
-.cubo-container {
-    position: absolute;
-    transition: opacity 1s ease, z-index 0.5s ease;
-}
-
-.cubo {
-    width: 200px;
-    height: 200px;
-    position: relative;
-}
-
-.cubo1 {
-    background-color: red;
-    z-index: 2; /* Cubo1 começa por cima */
-}
-
-.cubo2 {
-    background-color: blue;
-    z-index: 1; /* Cubo2 começa por baixo */
-}
-
-button {
-    margin-top: 220px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #555;
-}
-
-.btn-cubo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: white;
-    border: 1px solid #333;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.btn-cubo-topo {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 10px 20px;
-    background-color: white;
-    border: 1px solid #333;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.texto {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 16px;
-    color: white;
-    display: none;
-}

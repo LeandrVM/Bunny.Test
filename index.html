@@ -3,42 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cubos Interativos</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Bunny
+    </title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Div que envolve o cubo1 e o botão do cubo1 -->
-        <div id="cubo1-container" class="cubo-container">
-            <div id="cubo1" class="cubo cubo1">
-                <button class="btn-cubo" onclick="exibirTexto('Texto do Cubo1')">Clique no Cubo 1</button>
-            </div>
-            <div id="texto1" class="texto"></div>
+    <div id="container">
+        <div id="gif-container">
+            <img src="Gifs/Parado.gif" id="gif" alt="Gif" />
+            <div id="bola"></div>
         </div>
-
-        <!-- Div que envolve o cubo2 e o botão do cubo2 -->
-        <div id="cubo2-container" class="cubo-container">
-            <div id="cubo2" class="cubo cubo2">
-                <button class="btn-cubo-topo" onclick="exibirTexto('Texto do Cubo2')">Clique no Cubo 2</button>
-            </div>
-            <div id="texto2" class="texto"></div>
-        </div>
-
-        <!-- Botão para trocar a posição dos cubos -->
-        <button id="botao">Trocar Posição</button>
-    </div>
-    <div class="body1">
-        <div id="cubo1">
-            <button id="cubobtn1">01</button>
-        </div>
-        <div id="cubo1">
-            <button id="cubobtn2">02</button> 
-        </div>
-        <div>         
-            <button id="trocabtn">troca</button>
-        </div>
-
-    </div>
+    </div> 
     <script src="script.js"></script>
 </body>
 </html>
