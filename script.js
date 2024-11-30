@@ -24,14 +24,14 @@ document.getElementById("bola").addEventListener("click", function () {
 });
 
 document.getElementById("bola").addEventListener("mouseenter", function () {
-    alterarGif("Gifs/mouse.gif", 1.6, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
+    alterarGif("Gifs/Mouse.gif", 1.6, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
     alterarTransformacao(1.6, 20); // Aumenta a escala e desce um pouco
 });
 
 document.getElementById("bola").addEventListener("mouseleave", function () {
     // Verifica se o GIF atual não é o "mouse"
     const gifAtual = document.getElementById("gif").src;
-    if (gifAtual.includes("mouse.gif")) {
+    if (gifAtual.includes("Mouse.gif")) {
         alterarGif("Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
         alterarTransformacao(1, 0); // Volta ao tamanho e posição originais
     }
