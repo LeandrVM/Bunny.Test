@@ -13,7 +13,7 @@ document.getElementById("bola").addEventListener("click", function () {
 
       // Depois de mover, mostra o GIF "Aparecer" com outro tamanho e deslocamento Y
       setTimeout(function () {
-        alterarGif("/Gifs/Aparecer.gif", 1.6, 20); // Exemplo de escala e deslocamento Y para o GIF "Aparecer"
+        alterarGif("/Gifs/Aparecer.gif", 1.5, 20); // Exemplo de escala e deslocamento Y para o GIF "Aparecer"
 
         // Após 0.5 segundos, retorna para o GIF "Parado"
         setTimeout(function () {
