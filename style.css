@@ -1,48 +1,50 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #4b4b4b;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b4b4b;
 }
 
 #container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 #gif-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: idaVolta 5s ease-in-out infinite; /* Aplica a animação ida e volta no contêiner */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: idaVolta 5s ease-in-out infinite; /* Aplica a animação ida e volta no contêiner */
 }
 
 #gif {
-    width: 200px;  /* Ajuste a largura conforme o tamanho do seu GIF */
-    height: auto;
-    position: relative;
-    z-index: 1;
+  width: 200px; /* Ajuste a largura conforme o tamanho do seu GIF */
+  height: auto;
+  position: relative;
+  z-index: 1;
 }
 
 #bola {
-    width: 110px;  /* Tamanho da bola */
-    height: 110px; /* Tamanho da bola */
-    border-radius: 50%;
-    background-color: transparent; /* Cor da bola */
-    position: absolute;
-    top: 65%;  /* Alinha verticalmente no centro */
-    left: 50%; /* Alinha horizontalmente no centro */
-    transform: translate(-50%, -50%); /* Move para garantir que esteja centralizada */
-    z-index: 2;  /* Coloca a bola na frente do gif */
-    cursor: pointer;  /* Deixa o cursor como mãozinha ao passar sobre a bola */
+  width: 110px; /* Tamanho da bola */
+  height: 110px; /* Tamanho da bola */
+  border-radius: 50%;
+  background-color: #4b4b4b; /* Cor da bola */
+  position: absolute;
+  top: 65%; /* Alinha verticalmente no centro */
+  left: 50%; /* Alinha horizontalmente no centro */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Move para garantir que esteja centralizada */
+  z-index: 2; /* Coloca a bola na frente do gif */
+  cursor: pointer; /* Deixa o cursor como mãozinha ao passar sobre a bola */
 }
 
 /* Animação de ida e volta */
 @keyframes idaVolta {
-
 }
