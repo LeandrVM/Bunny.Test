@@ -24,8 +24,10 @@ document.getElementById("bola").addEventListener("click", function () {
 });
 
 document.getElementById("bola").addEventListener("mouseenter", function () {
-  alterarGif("/Gifs/Mouse.gif", 1.6, 10); // Aumenta a escala e desce um pouco para o GIF "mouse"
-  // Aumenta a escala e desce um pouco
+  alterarGif("/Gifs/Mouse.gif", 1, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
+  if (alterarGif) {
+    alterarTransformacao(1.6, 20);
+  } // Aumenta a escala e desce um pouco
 });
 
 document.getElementById("bola").addEventListener("mouseleave", function () {
@@ -33,7 +35,9 @@ document.getElementById("bola").addEventListener("mouseleave", function () {
   const gifAtual = document.getElementById("gif").src;
   if (gifAtual.includes("/Gifs/Mouse.gif")) {
     alterarGif("/Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
-    alterarTransformacao(1, 0); // Volta ao tamanho e posição originais
+    if (alterarGif) {
+      alterarTransformacao(1, 0);
+    } // Volta ao tamanho e posição originais
   }
 });
 
