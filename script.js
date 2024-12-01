@@ -1,14 +1,10 @@
 document.getElementById("bola").addEventListener("click", function () {
   // Primeiramente, troca o GIF para "Clique" com um tamanho e deslocamento em Y especificado
-  alterarGif("https://leandrvm.github.io/Bunny.Test//Gifs/Clique.gif", 1.6, 10); // Exemplo de escala e deslocamento Y para o GIF "Clique"
+  alterarGif("https://leandrvm.github.io/Bunny.Test/Gifs/Clique.gif", 1.6, 10); // Exemplo de escala e deslocamento Y para o GIF "Clique"
   play(); // Toca a música dependendo do número aleatório gerado
   // Quando o GIF "Clique" terminar, troca para "Sumir"
   setTimeout(function () {
-    alterarGif(
-      "https://leandrvm.github.io/Bunny.Test//Gifs/Sumir.gif",
-      0.6,
-      15
-    ); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
+    alterarGif("https://leandrvm.github.io/Bunny.Test/Gifs/Sumir.gif", 0.6, 15); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
     playsom();
     // Quando o GIF "Sumir" terminar, faz o movimento
     setTimeout(function () {
@@ -17,7 +13,7 @@ document.getElementById("bola").addEventListener("click", function () {
       // Depois de mover, mostra o GIF "Aparecer" com outro tamanho e deslocamento Y
       setTimeout(function () {
         alterarGif(
-          "https://leandrvm.github.io/Bunny.Test//Gifs/Aparecer.gif",
+          "https://leandrvm.github.io/Bunny.Test/Gifs/Aparecer.gif",
           1.5,
           20
         ); // Exemplo de escala e deslocamento Y para o GIF "Aparecer"
@@ -25,7 +21,7 @@ document.getElementById("bola").addEventListener("click", function () {
         // Após 0.5 segundos, retorna para o GIF "Parado"
         setTimeout(function () {
           alterarGif(
-            "https://leandrvm.github.io/Bunny.Test//Gifs/Parado.gif",
+            "https://leandrvm.github.io/Bunny.Test/Gifs/Parado.gif",
             1,
             0
           ); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
@@ -36,7 +32,7 @@ document.getElementById("bola").addEventListener("click", function () {
 });
 
 document.getElementById("bola").addEventListener("mouseenter", function () {
-  alterarGif("https://leandrvm.github.io/Bunny.Test//Gifs/Mouse.gif", 1.6, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
+  alterarGif("https://leandrvm.github.io/Bunny.Test/Gifs/Mouse.gif", 1.6, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
   alterarTransformacao(1.6, 20); // Aumenta a escala e desce um pouco
 });
 
@@ -44,9 +40,9 @@ document.getElementById("bola").addEventListener("mouseleave", function () {
   // Verifica se o GIF atual não é o "mouse"
   const gifAtual = document.getElementById("gif").src;
   if (
-    gifAtual.includes("https://leandrvm.github.io/Bunny.Test//Gifs/Mouse.gif")
+    gifAtual.includes("https://leandrvm.github.io/Bunny.Test/Gifs/Mouse.gif")
   ) {
-    alterarGif("https://leandrvm.github.io/Bunny.Test//Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
+    alterarGif("https://leandrvm.github.io/Bunny.Test/Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
     alterarTransformacao(1, 0); // Volta ao tamanho e posição originais
   }
 });
