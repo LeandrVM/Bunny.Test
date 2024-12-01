@@ -25,7 +25,7 @@ document.getElementById("bola").addEventListener("click", function () {
 
 document.getElementById("bola").addEventListener("mouseenter", function () {
   alterarGif("/Gifs/Mouse.gif", 1.6, 10); // Aumenta a escala e desce um pouco para o GIF "mouse"
-  alterarTransformacao(1.6, 13); // Aumenta a escala e desce um pouco
+  alterarTransformacao(1.6, 20); // Aumenta a escala e desce um pouco
 });
 
 document.getElementById("bola").addEventListener("mouseleave", function () {
