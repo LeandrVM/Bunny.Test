@@ -4,7 +4,7 @@ document.getElementById("bola").addEventListener("click", function () {
   play(); // Toca a música dependendo do número aleatório gerado
   // Quando o GIF "Clique" terminar, troca para "Sumir"
   setTimeout(function () {
-    alterarGif("/Gifs/Sumir.gif", 0.6, 10); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
+    alterarGif("/Gifs/Sumir.gif", 0.6, 15); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
     playsom();
     // Quando o GIF "Sumir" terminar, faz o movimento
     setTimeout(function () {
@@ -24,8 +24,8 @@ document.getElementById("bola").addEventListener("click", function () {
 });
 
 document.getElementById("bola").addEventListener("mouseenter", function () {
-  alterarGif("/Gifs/Mouse.gif", 1.6, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
-  alterarTransformacao(1.6, 20); // Aumenta a escala e desce um pouco
+  alterarGif("/Gifs/Mouse.gif", 1, 20); // Aumenta a escala e desce um pouco para o GIF "mouse"
+  alterarTransformacao(1, 20); // Aumenta a escala e desce um pouco
 });
 
 document.getElementById("bola").addEventListener("mouseleave", function () {

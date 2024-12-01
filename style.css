@@ -30,8 +30,8 @@ html {
 }
 
 #bola {
-  width: 110px; /* Tamanho da bola */
-  height: 110px; /* Tamanho da bola */
+  width: 100px; /* Tamanho da bola */
+  height: 100px; /* Tamanho da bola */
   border-radius: 50%;
   background-color: transparent; /* Cor da bola */
   position: absolute;
