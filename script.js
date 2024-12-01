@@ -4,7 +4,7 @@ document.getElementById("bola").addEventListener("click", function () {
   play(); // Toca a música dependendo do número aleatório gerado
   // Quando o GIF "Clique" terminar, troca para "Sumir"
   setTimeout(function () {
-    alterarGif("/Gifs/Sumir.gif", 0.6, 15); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
+    alterarGif("/Gifs/Sumir.gif", 0.6, 10); // Exemplo de escala e deslocamento Y para o GIF "Sumir"
     playsom();
     // Quando o GIF "Sumir" terminar, faz o movimento
     setTimeout(function () {
