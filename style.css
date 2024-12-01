@@ -27,6 +27,7 @@ html {
   height: auto;
   position: relative;
   z-index: 1;
+  transform: scale(1.6);
 }
 
 #bola {

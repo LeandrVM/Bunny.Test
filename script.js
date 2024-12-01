@@ -1,3 +1,4 @@
+
 document.getElementById("bola").addEventListener("click", function () {
   // Primeiramente, troca o GIF para "Clique" com um tamanho e deslocamento em Y especificado
   alterarGif("/Gifs/Clique.gif", 1.6, 10); // Exemplo de escala e deslocamento Y para o GIF "Clique"
@@ -12,11 +13,11 @@ document.getElementById("bola").addEventListener("click", function () {
 
       // Depois de mover, mostra o GIF "Aparecer" com outro tamanho e deslocamento Y
       setTimeout(function () {
-        alterarGif("/Gifs/Aparecer.gif", 1.5, 20); // Exemplo de escala e deslocamento Y para o GIF "Aparecer"
+        alterarGif("/Gifs/Aparecer.gif", 1.6, 20); // Exemplo de escala e deslocamento Y para o GIF "Aparecer"
 
         // Após 0.5 segundos, retorna para o GIF "Parado"
         setTimeout(function () {
-          alterarGif("/Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
+          alterarGif("/Gifs/Parado.gif", 1.6, 10); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
         }, 500); // Tempo de exibição do "Aparecer"
       }, 100); // Atraso após o movimento antes de exibir o "Aparecer"
     }, 100); // Ajuste o tempo conforme a duração do "Sumir.gif"
@@ -34,9 +35,9 @@ document.getElementById("bola").addEventListener("mouseleave", function () {
   // Verifica se o GIF atual não é o "mouse"
   const gifAtual = document.getElementById("gif").src;
   if (gifAtual.includes("/Gifs/Mouse.gif")) {
-    alterarGif("/Gifs/Parado.gif", 1, 0); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
+    alterarGif("/Gifs/Parado.gif", 1, 10); // Volta ao tamanho original e sem deslocamento no GIF "Parado"
     if (alterarGif) {
-      alterarTransformacao(1, 0);
+      alterarTransformacao(1.6, 10);
     } // Volta ao tamanho e posição originais
   }
 });
